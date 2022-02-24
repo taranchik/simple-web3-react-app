@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import Web3 from "web3";
 
 var web3;
-const contractAddress = "0x0C7837C3F9CDCc4Ff1c5B5953177E3E5182f2046";
+const contractAddress = "0x440EC3da19DA58e89707371BECFd6D42593fE1d8";
 
 const contractJsonInterface = [
   {
@@ -814,7 +814,7 @@ const metadataUri = `{
   placement: "wall",
 }`;
 
-const mintToAddress = "0x1f2020E04C881aa7fF155b78900f07CfFe7f4Aa6";
+const mintToAddress = "0x488ac0f48A053481a555bb67a6c2932115B524bE";
 
 const setupWeb3 = async () => {
   //https://stackoverflow.com/cuestions/48735118/usin-~web3-from.metamask-in~react
@@ -858,6 +858,7 @@ class App extends Component {
       contractJsonInterface,
       contractAddress
     );
+    console.log(this.nftContract);
   }
 
   safeMint = () => {
